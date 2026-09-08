@@ -1,0 +1,94 @@
+@config '../../tailwind.config.js';
+
+
+.care-token-display-fe-container {
+  @import "tailwindcss";
+  /* Primary palette */
+  --primary-50:  var(--color-emerald-50);
+  --primary-100: var(--color-emerald-100);
+  --primary-200: var(--color-emerald-200);
+  --primary-300: var(--color-emerald-300);
+  --primary-400: var(--color-emerald-400);
+  --primary-500: var(--color-emerald-500);
+  --primary-600: var(--color-emerald-600);
+  --primary-700: var(--color-emerald-700);
+  --primary-800: var(--color-emerald-800);
+  --primary-900: var(--color-emerald-900);
+  --primary-950: var(--color-emerald-950);
+
+  --radius: 0.625rem;
+
+  --background: var(--color-white);
+  --soft-background: var(--color-neutral-50);
+  --muted-background: var(--color-neutral-100);
+  --strong-background: var(--color-neutral-200);
+
+  --muted: var(--color-neutral-100);
+
+  --foreground: var(--color-neutral-950);
+  --muted-foreground: var(--color-neutral-700);
+  --soft-foreground: var(--color-neutral-600);
+  --disabled-foreground: var(--color-neutral-300);
+  --placeholder-foreground: var(--color-neutral-500);
+  --inverse-foreground: var(--color-white);
+
+  --card: var(--color-white);
+  --card-foreground: var(--color-neutral-950);
+
+  --popover: var(--color-white);
+  --popover-foreground: var(--color-neutral-950);
+
+  --primary: var(--color-primary-800);
+  --primary-foreground: var(--color-primary-50);
+
+  --secondary: var(--color-neutral-100);
+  --secondary-foreground: var(--color-neutral-900);
+
+  --accent: var(--color-neutral-100);
+  --accent-foreground: var(--color-neutral-900);
+
+  --destructive: var(--color-red-600);
+  --destructive-foreground: var(--color-red-50);
+
+  --soft-border: var(--color-neutral-100);
+  --border: var(--color-neutral-200);
+  --strong-border: var(--color-neutral-300);
+  --stronger-border: var(--color-neutral-400);
+  --inverse-border: var(--color-white);
+
+  --input: var(--color-neutral-300);
+  --ring: --alpha(var(--color-indigo-500) / 75%);
+
+  --chart-1: var(--color-orange-600);
+  --chart-2: var(--color-primary-600);
+  --chart-3: var(--color-cyan-900);
+  --chart-4: var(--color-amber-400);
+  --chart-5: var(--color-yellow-500);
+
+  --sidebar: var(--color-neutral-100);
+  --sidebar-foreground: var(--color-neutral-950);
+  --sidebar-primary: var(--color-primary-800);
+  --sidebar-primary-foreground: var(--color-primary-50);
+  --sidebar-accent: var(--color-neutral-200);
+  --sidebar-accent-foreground: var(--color-neutral-950);
+  --sidebar-border: var(--color-neutral-200);
+  --sidebar-ring: var(--color-indigo-400);
+}
+
+/*
+  The default border color has changed to `currentColor` in Tailwind CSS v4,
+  so we've added these compatibility styles to make sure everything still
+  looks the same as it did with Tailwind CSS v3.
+
+  If we ever want to remove these styles, we need to add an explicit border
+  color utility to any element that depends on these defaults.
+*/
+@layer base {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-gray-200, currentColor);
+  }
+}
