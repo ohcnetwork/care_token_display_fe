@@ -32,7 +32,7 @@ export default function PluginComponent({
 
   return (
     <div
-      className="care-token-display-fe-container"
+      className="care-token-display-fe-container bg-transparent"
       ref={setContainer}
     >
       <ContainerRefContext.Provider value={ref}>

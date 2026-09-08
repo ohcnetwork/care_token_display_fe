@@ -75,3 +75,27 @@ export function toWriteMetadata(
     service_account: metadata.service_account?.id ?? null,
   };
 }
+
+/**
+ * Coerce metadata that may hold either the expanded read shape or already-flat
+ * IDs into the write shape. The device form seeds its state from the retrieve
+ * response, so both shapes can reach the create/update payload.
+ */
+export function normalizeWriteMetadata(
+  metadata: Record<string, unknown> | undefined,
+): TokenDisplayWriteMetadata {
+  const { sub_queues, service_account } = (metadata ?? {}) as {
+    sub_queues?: (string | TokenSubQueueRead)[];
+    service_account?: string | UserBase | null;
+  };
+
+  return {
+    sub_queues: (sub_queues ?? []).map((subQueue) =>
+      typeof subQueue === "string" ? subQueue : subQueue.id,
+    ),
+    service_account:
+      (typeof service_account === "string"
+        ? service_account
+        : service_account?.id) ?? null,
+  };
+}

@@ -37,7 +37,7 @@ function buildUpdateBody(
     user_friendly_name: device.user_friendly_name,
     model_number: device.model_number,
     part_number: device.part_number,
-    contact: device.contact,
+    contact: Array.isArray(device.contact) ? device.contact : [],
     care_type: device.care_type,
     ...metadata,
   };

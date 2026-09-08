@@ -1,10 +1,12 @@
 {
   "active": "Active",
+  "add": "Add",
   "add_service_point_hint": "To add a service point to this display, open the facility's queue management page, edit the service point, and use \"Add to Token Display\".",
   "add_to_display": "Add to Display",
   "add_to_token_display": "Add to Token Display",
   "add_to_token_display_description": "Choose the token display that should show \"{{name}}\".",
   "added_to_token_display": "Service point added to the token display",
+  "added_to_token_display_success_description": "\"{{name}}\" will now show on \"{{display}}\".",
   "cancel": "Cancel",
   "change_service_account": "Change service account",
   "configure_after_create_hint": "Service points and the service account are configured after the display is created — service points from the queue management page, and the service account from this device's page.",
@@ -22,6 +24,7 @@
   "no_service_points_configured": "No service points configured on this display yet.",
   "no_token_displays_found": "No token displays found",
   "open": "Open",
+  "open_display": "Open display",
   "remove": "Remove",
   "remove_selected": "Remove {{count}} selected",
   "search_service_accounts": "Search service accounts",
@@ -33,5 +36,6 @@
   "service_points": "Service points",
   "service_points_removed": "Service points removed",
   "status": "Status",
-  "unlink": "Unlink"
+  "unlink": "Unlink",
+  "view_device": "View device"
 }

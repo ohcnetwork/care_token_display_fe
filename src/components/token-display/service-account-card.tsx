@@ -131,7 +131,7 @@ export default function ServiceAccountCard({
           </DialogHeader>
 
           <div className="relative">
-            <Search className="absolute left-2.5 top-1/2 size-4 -translate-y-1/2 text-muted-foreground" />
+            <Search className="absolute right-2.5 top-1/2 size-4 -translate-y-1/2 text-muted-foreground" />
             <Input
               className="pl-8"
               placeholder={t("search_service_accounts")}
