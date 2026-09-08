@@ -55,7 +55,6 @@ export default function ServiceAccountCard({
       setPickerOpen(false);
       toast.success(t("service_account_updated"));
     },
-    onError: () => toast.error(t("failed_to_update_service_account")),
   });
 
   const setServiceAccount = (id: string | null) =>

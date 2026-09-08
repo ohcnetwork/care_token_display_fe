@@ -60,7 +60,6 @@ export default function SubQueueActions({
         toast.error(t("service_point_already_on_display"));
         return;
       }
-      toast.error(t("failed_to_add_to_token_display"));
     },
   });
 

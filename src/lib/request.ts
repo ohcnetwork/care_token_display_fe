@@ -59,6 +59,7 @@ export class HttpError extends Error {
   status: number;
   silent: boolean;
   cause?: HttpErrorCause;
+  name: "HttpError";
 
   constructor({
     message,
@@ -72,6 +73,7 @@ export class HttpError extends Error {
     cause?: Record<string, unknown>;
   }) {
     super(message);
+    this.name = "HttpError";
     this.status = status;
     this.silent = silent;
     this.cause = cause;

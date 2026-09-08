@@ -51,7 +51,6 @@ export default function ServicePointsCard({
       toast.success(t("service_points_removed"));
       setSelected([]);
     },
-    onError: () => toast.error(t("failed_to_remove_service_points")),
   });
 
   const removeSubQueues = (ids: string[]) => {

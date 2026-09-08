@@ -47,6 +47,7 @@ export class SubQueueAlreadyLinkedError extends Error {
   constructor() {
     super("sub_queue_already_linked");
     this.name = "SubQueueAlreadyLinkedError";
+    this.message = "This service point is already on that display"
   }
 }
 
