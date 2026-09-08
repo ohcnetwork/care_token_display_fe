@@ -12,14 +12,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ohcnetwork/care_excalidraw_fe.git"
+    "url": "git+https://github.com/ohcnetwork/care_token_display_fe.git"
   },
   "author": "Open Healthcare Network",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ohcnetwork/care_excalidraw_fe/issues"
+    "url": "https://github.com/ohcnetwork/care_token_display_fe/issues"
   },
-  "homepage": "https://github.com/ohcnetwork/care_excalidraw_fe#readme",
+  "homepage": "https://github.com/ohcnetwork/care_token_display_fe#readme",
   "description": "",
   "lint-staged": {
     "*.{ts,tsx,js,jsx}": [

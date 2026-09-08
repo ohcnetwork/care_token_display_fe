@@ -9,7 +9,7 @@ import { scopeTailwindOutput } from "./scripts/postcss-scope-plugin";
 export default defineConfig({
   plugins: [
     federation({
-      name: "care_excalidraw",
+      name: "care_token_display",
       filename: "remoteEntry.js",
       exposes: {
         "./manifest": "./src/manifest.tsx",
