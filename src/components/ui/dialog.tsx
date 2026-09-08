@@ -11,6 +11,7 @@ import * as React from "react";
 import { cn } from "@/lib/utils";
 
 import { Button } from "@/components/ui/button";
+import { usePortalContainer } from "@/hooks/use-container-ref";
 
 type RenderProp =
   | React.ReactElement
@@ -62,7 +63,14 @@ function DialogTrigger({
 }
 
 function DialogPortal({ ...props }: DialogPrimitive.Portal.Props) {
-  return <DialogPrimitive.Portal data-slot="dialog-portal" {...props} />;
+  const container = usePortalContainer();
+  return (
+    <DialogPrimitive.Portal
+      data-slot="dialog-portal"
+      container={container}
+      {...props}
+    />
+  );
 }
 
 function DialogClose({

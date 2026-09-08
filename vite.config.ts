@@ -3,6 +3,7 @@ import federation from "@originjs/vite-plugin-federation";
 import path from "path";
 import react from "@vitejs/plugin-react-swc";
 import tailwindcss from "@tailwindcss/vite";
+import { scopeTailwindOutput } from "./scripts/postcss-scope-plugin";
 
 // https://vite.dev/config/
 export default defineConfig({
@@ -23,6 +24,7 @@ export default defineConfig({
       ],
     }),
     tailwindcss(),
+    scopeTailwindOutput(),
     react(),
   ],
   build: {
